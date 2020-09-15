@@ -12,11 +12,13 @@ public class BestTimeToBuyAndSellStock{
 			int maxValue=0;
 			int minValue=price[0];
 			for (int i=1;i<n;i++){
+				//take small value from the array
 				int diff=price[i]-minValue;
 				if (diff<0){
 					minValue=price[i];
 					continue;
 				}
+				//take max value from the array 
 				maxValue=Math.max(maxValue,diff);
 			}
 			System.out.println(maxValue);
