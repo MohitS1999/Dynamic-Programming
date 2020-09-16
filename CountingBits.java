@@ -32,7 +32,7 @@ public class CountingBits{
 			else 
 				ar[i]=ar[i>>1];
 		}
-		//System.out.println();
+		
 		return ar;
 	}
 }
