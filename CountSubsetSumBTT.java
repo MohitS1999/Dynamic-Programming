@@ -12,6 +12,8 @@ public class CountSubsetSumBTT{
 			System.out.println(Subset(ar,n,sum));
 		}
 	}
+	
+	//bottom to top
 	public static int Subset(int[] ar,int n,int S){
 		int dp[][]=new int[n+1][S+1];
 		for (int i=0;i<n+1;i++){
