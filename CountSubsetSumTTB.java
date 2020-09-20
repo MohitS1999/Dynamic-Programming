@@ -21,7 +21,7 @@ public class CountSubsetSumTTB{
 		//Memorization
 		//Dp converts the recursion 2^n complexity to Quadration complexity n^2
 		if (dp[n][sum]!=0) return dp[n][sum];
-		
+		// if the the element is greater than the sum of subset
 		if (ar[n-1] > sum)
 			return dp[n][sum]=Subset(ar,n-1,sum,dp);
 		return dp[n][sum]=(Subset(ar,n-1,sum-ar[n-1],dp)+Subset(ar,n-1,sum,dp));
