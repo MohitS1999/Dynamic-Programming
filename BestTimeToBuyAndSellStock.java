@@ -7,8 +7,9 @@ public class BestTimeToBuyAndSellStock{
 		while (t-->0){
 			int n=sc.nextInt();
 			int price[]=new int[n];
-			for (int i=0;i<n;i++)
+			for (int i=0;i<n;i++){
 				price[i]=sc.nextInt();
+			}
 			int maxValue=0;
 			int minValue=price[0];
 			for (int i=1;i<n;i++){
