@@ -32,7 +32,7 @@ public class CountingBits{
 			else 
 				ar[i]=ar[i>>1];
 		}
-		
+		// return array
 		return ar;
 	}
 }
